@@ -1,4 +1,4 @@
-const Icon__EyeOn = () => {
+const Icon__EyeOn = ({ className = "" }: { className?: string }) => {
   return (
     <svg
       width="47"
@@ -6,6 +6,7 @@ const Icon__EyeOn = () => {
       viewBox="0 0 47 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M18.4336 19.1582C18.4336 16.3213 20.7354 14.0195 23.5722 14.0195C26.4091 14.0195 28.7109 16.3213 28.7109 19.1582C28.7109 21.995 26.4091 24.2968 23.5722 24.2968C20.7354 24.2968 18.4336 21.995 18.4336 19.1582Z"
