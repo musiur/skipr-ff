@@ -24,7 +24,7 @@ const Section__Autonomy = () => {
           zero humans to monitor you.
         </h1>
       </ANIM__FadeInOutOnScroll>
-      <ul className="flex flex-col md:flex-row items-center justify-center gap-4 [&>*]:text-center">
+      <ANIM__FadeInOutOnScroll className="flex flex-col md:flex-row items-center justify-center gap-4 [&>*]:text-center list-none">
         <li className="max-w-[280px] md:max-w-[320px] text-sm">
           Skipr deploys autonomous agents which use machine learning to enhance
           customer experience by scaling the autonomous network to match the VPN
@@ -36,7 +36,7 @@ const Section__Autonomy = () => {
             alt=""
             width={1000}
             height={1000}
-            className="max-w-[500px] h-auto"
+            className="w-auto h-auto"
           />
         </li>
         <li className="max-w-[280px] md:max-w-[300px] text-sm">
@@ -44,7 +44,7 @@ const Section__Autonomy = () => {
           who learn from that data to contnuously optmize Skipr&apos;s
           autonomous operaton.
         </li>
-      </ul>
+      </ANIM__FadeInOutOnScroll>
       <ANIM__FadeInOutOnScroll className="pt-8">
         <button className="bg-secondary text-darkish border-darkish min-w-[240px]">
           Learn More
