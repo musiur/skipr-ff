@@ -25,7 +25,7 @@ const Section__HomeHero = () => {
       <div className="text-5xl font-bold text-white container section flex flex-col lg:flex-row items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="py-[100px] w-full">
           <h1 className={cn(bebas_neue.className, "")}>
-            <span className="underline text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[38px] 2xl:text-[44px] mr-2">
+            <span className="underline text-[32px] xl:text-[38px] 2xl:text-[44px] mr-2">
               THE
             </span>
             &nbsp;MOST PRIVATE <br /> AND SECURE SETTING <br /> ON THE PLANET

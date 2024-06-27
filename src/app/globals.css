@@ -32,9 +32,16 @@
 }
 
 h1 {
-  @apply text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[52px];
+  @apply text-[40px] xl:text-[48px] 2xl:text-[52px];
   span {
-    @apply text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[52px];
+    @apply text-[40px] xl:text-[48px] 2xl:text-[52px];
+  }
+}
+
+h2 {
+  @apply text-[36px] xl:text-[40px] 2xl:text-[48px];
+  span {
+    @apply text-[36px] xl:text-[40px] 2xl:text-[48px];
   }
 }
 
