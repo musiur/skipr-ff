@@ -99,6 +99,12 @@ const Section__Monitor = () => {
         <div className="absolute hidden md:block z-0 top-[43px] left-0 w-[66%] ml-[16%] min-h-3 bg-gradient-to-r from-white via-white to-[#e4c2fa] border-y-[3px] border-darkish"></div>
         <div className="absolute hidden md:block z-10 top-[46px] left-0 w-[66%] ml-[16%] min-h-[9px] bg-gradient-to-r from-white via-white to-[#793EF7] border-y-[3px] border-darkish/0"></div>
       </ul>
+
+      <ANIM__FadeInOutOnScroll className="pt-8">
+        <button className="bg-primary text-white border-darkish min-w-[240px]">
+          Get Access
+        </button>
+      </ANIM__FadeInOutOnScroll>
     </section>
   );
 };
