@@ -1,13 +1,9 @@
 import Navbar from "@/components/layouts/navbar";
-import Section__HomeHero from "./_utils/components/hero.section";
-import Section__Privacy from "./_utils/components/privacy.section";
 
-const Home = () => {
+const Page = () => {
   return (
     <>
-      <Navbar color="white" />
-      <Section__HomeHero />
-      <Section__Privacy />
+      <Navbar color="black" />
       <p className="text-8xl font-bold container section">
         Occaecat est dolor eiusmod ad culpa eiusmod in amet consequat quis.
         Dolor nulla dolore et in quis laboris. Laboris eu do sunt anim ad minim
@@ -18,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Page;
