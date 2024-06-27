@@ -48,3 +48,7 @@ h2 {
 button {
   @apply h-9 text-center flex items-center justify-center w-full rounded-md border-2 px-8;
 }
+
+.clip-path-curve {
+  clip-path: ellipse(60% 100% at 50% 100%);
+}
