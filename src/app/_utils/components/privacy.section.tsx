@@ -1,6 +1,5 @@
 import ANIM__FadeInOutOnScroll from "@/components/anims/fadein.anim";
 import { cn } from "@udecode/cn";
-import clsx from "clsx";
 import { Bebas_Neue } from "next/font/google";
 
 const bebas_neue = Bebas_Neue({
