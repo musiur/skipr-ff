@@ -36,11 +36,16 @@ const Section__Monitor = () => {
             <div className="relative min-w-20 max-w-20 min-h-20 max-h-20 rounded-full flex items-center justify-center">
               {card.id === 3 ? (
                 <>
-                  <div className="animate-ping rounded-full min-w-12 max-w-12 max-h-12 min-h-12 border-2 border-primary delay-300 flex items-center justify-center">
-                    <div className="animate-ping rounded-full min-w-12 max-w-12 max-h-12 min-h-12 border-2 border-primary/80 delay-700 flex items-center justify-center"></div>
+                  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                    <div className="animate-slowPing rounded-full min-w-16 max-w-16 max-h-16 min-h-16 bg-primary flex items-center justify-center"></div>
                   </div>
+
+                  <div className="absolute top-0 left-0 z-50 w-full h-full flex items-center justify-center">
+                    <div className="animate-slowPing rounded-full min-w-14 max-w-14 max-h-14 min-h-14  bg-secondary delay-100 flex items-center justify-center"></div>
+                  </div>
+
                   <div className="z-30 absolute top-0 left-0 flex items-center justify-center w-full h-full">
-                    <div className="rounded-full min-w-[74px] max-w-[74px] max-h-[74px] min-h-[74px] bg-gradient-to-tr from-primary to-secondary delay-300 flex items-center justify-center">
+                    <div className="rounded-full min-w-[94px] max-w-[94px] max-h-[94px] min-h-[94px] bg-gradient-to-tr from-primary to-secondary delay-300 flex items-center justify-center">
                       <BrandIcon className="fill-black stroke-black" />
                     </div>
                   </div>

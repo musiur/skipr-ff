@@ -23,7 +23,8 @@ const config: Config = {
         }
       },
       animation: {
-        fadeInDown: "fadeInDown 6s infinite linear"
+        fadeInDown: "fadeInDown 6s infinite linear",
+        slowPing: "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;"
       },
       colors: {
         primary: "#9900FF",

@@ -1,4 +1,4 @@
-import BrandLogo from "@/app/_utils/assets/brand-logo";
+import BrandLogo from "@/app/_utils/assets/brand__logo";
 import { Type__Navlink } from "@/utils/types";
 import NavLink from "./navlink";
 import clsx from "clsx";

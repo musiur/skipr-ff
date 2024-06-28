@@ -1,5 +1,5 @@
 import Icon__Man from "../assets/man.icon";
-import Icon__MapPin from "../assets/map-pin.icon";
+import Icon__MapPin from "../assets/map__pin.icon";
 import Icon__Eye from "../assets/eye.icon";
 import { ReactElement } from "react";
 import Image from "next/image";
