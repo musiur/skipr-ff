@@ -15,11 +15,13 @@ const Section__Platforms = () => {
       <section className="pb-24">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
-            <h1 className={cn(bebas_neue.className, "text-center leading-10")}>
-              <span className="underline text-[32px] xl:text-[38px] 2xl:text-[44px] mr-2">
-                THE
-              </span>
-              &nbsp;MOST SECURE YOU CAN GET <br /> IN EVERYTHING THAT YOU DO
+            <h1
+              className={cn(
+                bebas_neue.className,
+                "text-center leading-10 uppercase"
+              )}
+            >
+              available now on ios and android
             </h1>
           </ANIM__FadeInOutOnScroll>
           <div className="inline-flex items-center justify-center gap-14 mx-auto">
