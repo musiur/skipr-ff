@@ -6,6 +6,7 @@ import Section__Knowledge from "./_utils/components/knowledge.section";
 import Section__Autonomy from "./_utils/components/autonomy.section";
 import Section__Patent from "./_utils/components/patent-section";
 import Section__Performance from "./_utils/components/performance.section";
+import Section__Features from "./_utils/components/features.section";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Section__Autonomy />
       <Section__Patent />
       <Section__Performance />
+      <Section__Features />
     </>
   );
 };
