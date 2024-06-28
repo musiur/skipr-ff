@@ -1,8 +1,6 @@
 import ANIM__FadeInOutOnScroll from "@/components/anims/fadein.anim";
 import { cn } from "@udecode/cn";
 import { Bebas_Neue } from "next/font/google";
-import Icon__SuperFast from "../assets/super__fast.icon";
-import Icon__SuperStable from "../assets/super__stable.icon";
 import Image from "next/image";
 
 const bebas_neue = Bebas_Neue({
@@ -24,13 +22,13 @@ const Section__Features = () => {
               &nbsp;MOST SECURE YOU CAN GET <br /> IN EVERYTHING THAT YOU DO
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-32 w-full grid grid-cols-4 [&>*]:text-center gap-10">
+          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-32 w-full grid grid-cols-1 min-[460px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 [&>*]:text-center gap-10">
             {Data__FeatureCards.map((item) => {
               const { id, text, image } = item;
               return (
                 <ANIM__FadeInOutOnScroll
                   key={id}
-                  className="max-w-[300px] flex flex-col items-center justify-center gap-4"
+                  className="max-w-[300px] mx-auto flex flex-col items-center justify-center gap-4"
                 >
                   <Image
                     src={image || "wifi.svg"}
@@ -46,11 +44,6 @@ const Section__Features = () => {
               );
             })}
           </ANIM__FadeInOutOnScroll>
-          <ANIM__FadeInOutOnScroll className="pt-8">
-            <button className="bg-primary text-white border-blue-100 min-w-[240px]">
-              Get Access
-            </button>
-          </ANIM__FadeInOutOnScroll>
         </div>
       </section>
     </>
@@ -64,5 +57,40 @@ const Data__FeatureCards = [
     id: 1,
     text: "Public Wif Protection",
     image: "wifi.svg",
+  },
+  {
+    id: 2,
+    text: "Anonymous Web Browsing",
+    image: "anonymous.svg",
+  },
+  {
+    id: 3,
+    text: "Crypto and Financial Transactions",
+    image: "crypto.svg",
+  },
+  {
+    id: 4,
+    text: "Completely Private Communication",
+    image: "message.svg",
+  },
+  {
+    id: 5,
+    text: "Access to All File Downloads",
+    image: "access.svg",
+  },
+  {
+    id: 6,
+    text: "Avoid Bandwidth Throttling Slowdowns",
+    image: "bandwidth.svg",
+  },
+  {
+    id: 7,
+    text: "Super Fast Streaming",
+    image: "player.svg",
+  },
+  {
+    id: 8,
+    text: "Access to All Sensitive Files",
+    image: "key.svg",
   },
 ];

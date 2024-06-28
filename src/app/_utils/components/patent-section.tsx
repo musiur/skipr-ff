@@ -22,7 +22,7 @@ const Section__Patent = () => {
           >
             PATENT (Pending) TECHNOLOGY.
           </h1>
-          <p>
+          <p className="text-center pt-4 md:pt-0">
             This level of privacy and security simply cannot be found anywhere.
           </p>
         </ANIM__FadeInOutOnScroll>
