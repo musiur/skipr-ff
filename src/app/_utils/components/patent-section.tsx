@@ -32,7 +32,7 @@ const Section__Patent = () => {
             alt=""
             width={3000}
             height={3000}
-            className="w-auto h-auto -mb-4"
+            className="w-auto h-auto"
           />
         </ANIM__FadeInOutOnScroll>
       </section>
