@@ -24,7 +24,7 @@ const Section__Platforms = () => {
               available now on ios and android
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <div className="inline-flex items-center justify-center gap-14 mx-auto">
+          <div className="inline-flex items-start justify-center gap-14 mx-auto">
             <ANIM__FadeInOutOnScroll className="flex flex-col items-center justify-center [&>*]:text-center gap-4">
               <h3 className="text-[20px] md:text-[24px] text-center">
                 AVAILABLE
