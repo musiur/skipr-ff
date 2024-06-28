@@ -26,7 +26,7 @@ const Section__Performance = () => {
               ridiculously performant.
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] section w-full mx-auto flex flex-col md:flex-row items-center justify-between [&>*]:text-center gap-20 md:gap-10">
+          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-32 w-full mx-auto flex flex-col md:flex-row items-center justify-between [&>*]:text-center gap-20 md:gap-10">
             <li className="max-w-[300px] flex flex-col items-center justify-center gap-10">
               <div>
                 <Icon__SuperFast />

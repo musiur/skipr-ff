@@ -58,3 +58,17 @@ button {
     clip-path: ellipse(80% 100% at 50% 100%);
   }
 }
+
+@keyframes slow__ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

@@ -37,11 +37,11 @@ const Section__Monitor = () => {
               {card.id === 3 ? (
                 <>
                   <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                    <div className="animate-slowPing rounded-full min-w-16 max-w-16 max-h-16 min-h-16 bg-primary flex items-center justify-center"></div>
+                    <div className="animate-slowPing delay-1000 rounded-full min-w-14 max-w-14 max-h-14 min-h-14 bg-primary/30 flex items-center justify-center"></div>
                   </div>
 
-                  <div className="absolute top-0 left-0 z-50 w-full h-full flex items-center justify-center">
-                    <div className="animate-slowPing rounded-full min-w-14 max-w-14 max-h-14 min-h-14  bg-secondary delay-100 flex items-center justify-center"></div>
+                  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                    <div className="animate-slowPing rounded-full min-w-12 max-w-12 max-h-12 min-h-12  bg-primary flex items-center justify-center"></div>
                   </div>
 
                   <div className="z-30 absolute top-0 left-0 flex items-center justify-center w-full h-full">
