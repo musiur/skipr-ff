@@ -1,7 +1,7 @@
+import { ReactElement } from "react";
 import Icon__Man from "../assets/man.icon";
 import Icon__MapPin from "../assets/map__pin.icon";
 import Icon__Eye from "../assets/eye.icon";
-import { ReactElement } from "react";
 import Image from "next/image";
 import Icon__Paytent from "../assets/patent.icon";
 import Icon__Android from "../assets/android.icon";
@@ -21,7 +21,7 @@ const bebas_neue = Bebas_Neue({
 
 const Section__HomeHero = () => {
   return (
-    <section className="relative z-0 bg-gradient-to-tr from-darkish to-[#782FB0] overflow-hidden">
+    <section className="relative z-0 bg-gradient-to-tr from-[#042A45] via-[#391B72] to-[#7338AF] overflow-hidden">
       <div className="text-5xl font-bold text-white container section flex flex-col lg:flex-row items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="py-[100px] w-full">
           <h1 className={cn(bebas_neue.className, "")}>
@@ -93,7 +93,7 @@ const Section__HomeHero = () => {
           />
         </div>
       </div>
-      <div className="absolute top-0 right-[-10%] w-[30vw] h-[100vh] rounded-l-full z-[-1] bg-gradient-to-r from-[#10EDC490] via-[#00ffd0] to-[#6fffd4] filter blur-[120px] animate-fadeInDown"></div>
+      <div className="absolute top-0 -right-[16%] w-[30vw] h-[100vh] rounded-l-full z-[-1] bg-gradient-to-r from-[#10EDC490] via-[#00ffd0] to-[#0CF5C5] filter blur-[120px] animate-fadeInDown"></div>
     </section>
   );
 };

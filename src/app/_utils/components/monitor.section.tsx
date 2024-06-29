@@ -5,6 +5,7 @@ import BrandIcon from "../assets/brand__icon.icon";
 import ANIM__FadeInOutOnScroll from "@/components/anims/fadein.anim";
 import { cn } from "@udecode/cn";
 import { Bebas_Neue } from "next/font/google";
+import ANIM__DeployPurple from "@/components/anims/deploy__purple.anim";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -36,12 +37,8 @@ const Section__Monitor = () => {
             <div className="relative min-w-20 max-w-20 min-h-20 max-h-20 rounded-full flex items-center justify-center">
               {card.id === 3 ? (
                 <>
-                  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                    <div className="animate-slowPing delay-1000 rounded-full min-w-14 max-w-14 max-h-14 min-h-14 bg-primary/30 flex items-center justify-center"></div>
-                  </div>
-
-                  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                    <div className="animate-slowPing rounded-full min-w-12 max-w-12 max-h-12 min-h-12  bg-primary flex items-center justify-center"></div>
+                  <div className="absolute top-0 left-0 z-1 w-full h-full flex items-center justify-center">
+                    <ANIM__DeployPurple className="min-w-40 min-h-40" />
                   </div>
 
                   <div className="z-30 absolute top-0 left-0 flex items-center justify-center w-full h-full">
