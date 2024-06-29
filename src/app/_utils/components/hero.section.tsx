@@ -93,7 +93,7 @@ const Section__HomeHero = () => {
           />
         </div>
       </div>
-      <div className="absolute top-0 -right-[16%] w-[30vw] h-[100vh] rounded-l-full z-[-1] bg-gradient-to-r from-[#10EDC490] via-[#00ffd0] to-[#0CF5C5] filter blur-[120px] animate-fadeInDown"></div>
+      <div className="absolute top-0 -right-[16%] w-[30vw] h-[100vh] rounded-l-full z-[-1] bg-gradient-to-r from-[#10EDC490] via-[#0CF5C5] to-[#72ffe3] filter blur-[120px] animate-fadeInDown"></div>
     </section>
   );
 };
