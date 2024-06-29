@@ -14,7 +14,7 @@ const bebas_neue = Bebas_Neue({
 const Section__Performance = () => {
   return (
     <>
-      <section className="section bg-darkish [&>*]:text-white pt-[90px] ">
+      <section className="bg-darkish [&>*]:text-white py-48 ">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
             <h1
@@ -55,7 +55,7 @@ const Section__Performance = () => {
               </p>
             </li>
           </ANIM__FadeInOutOnScroll>
-          <ANIM__FadeInOutOnScroll className="pt-8">
+          <ANIM__FadeInOutOnScroll className="py-8">
             <button className="bg-primary text-white border-blue-100 min-w-[240px]">
               Get Access
             </button>
