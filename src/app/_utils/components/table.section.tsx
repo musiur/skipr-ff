@@ -1,6 +1,5 @@
 import ANIM__FadeInOutOnScroll from "@/components/anims/fadein.anim";
 import { cn } from "@udecode/cn";
-import { CheckCircleIcon, XCircleIcon } from "lucide-react";
 import { Bebas_Neue } from "next/font/google";
 import BrandIcon from "../assets/brand__icon.icon";
 import Image from "next/image";
