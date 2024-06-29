@@ -18,7 +18,7 @@ const Section__FeaturesMess = () => {
           <div className="grid grid-cols-1 min-[1050px]:grid-cols-7 gap-0 space-y-4 min-[1050px]:gap-4">
             <div className="relative col-span-1 min-[1050px]:col-span-3 w-full pr-0 min-[1050px]:pr-8 py-16 rounded-r-[40px] bg-primary flex flex-col space-y-10 gap-0 min-[1050px]:gap-10">
               <div className="absolute top-0 right-[100%] h-full min-w-[100dvw] bg-primary "></div>
-              <div className="border flex flex-col text-center min-[1050px]:text-left">
+              <div className="flex flex-col text-center min-[1050px]:text-left">
                 {["most vpns", "are not", "secure"].map((item: string) => {
                   return (
                     <p
