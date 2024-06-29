@@ -15,11 +15,11 @@ const config: Config = {
       },
       keyframes: {
         fadeInDown: {
-          "0%": { opacity: "0", transform: "translateY(-100%)" },
-          "20%": { opacity: "1", transform: "translateY(-50%)" },
-          "50%": { opacity: "60%", transform: "translateY(0)" },
-          "80%": { opacity: "50%", transform: "translateY(100vh)" },
-          "100%": { opacity: "0", transform: "translateY(100vh)" },
+          "0%": { opacity: "0", transform: "translate(-20vw,-100%)" },
+          "20%": { opacity: "70%", transform: "translate(-10vw,-50%)" },
+          "50%": { opacity: "60%", transform: "translate(0)" },
+          "80%": { opacity: "50%", transform: "translate(10vw, 50%)" },
+          "100%": { opacity: "0", transform: "translate(20vw,150%)" },
         }
       },
       animation: {

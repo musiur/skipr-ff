@@ -4,10 +4,11 @@ import Section__Privacy from "./_utils/components/privacy.section";
 import Section__Monitor from "./_utils/components/monitor.section";
 import Section__Knowledge from "./_utils/components/knowledge.section";
 import Section__Autonomy from "./_utils/components/autonomy.section";
-import Section__Patent from "./_utils/components/patent-section";
+import Section__Patent from "./_utils/components/patent.section";
 import Section__Performance from "./_utils/components/performance.section";
 import Section__Features from "./_utils/components/features.section";
 import Section__Platforms from "./_utils/components/platforms.section";
+import Section__FeaturesMess from "./_utils/components/features__mess.section";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <Section__Performance />
       <Section__Features />
       <Section__Platforms />
+      <Section__FeaturesMess />
     </>
   );
 };
