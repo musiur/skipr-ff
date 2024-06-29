@@ -10,6 +10,7 @@ import Section__Features from "./_utils/components/features.section";
 import Section__Platforms from "./_utils/components/platforms.section";
 import Section__FeaturesMess from "./_utils/components/features__mess.section";
 import Section__Table from "./_utils/components/table.section";
+import Section__Last from "./_utils/components/last.section";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Section__Platforms />
       <Section__FeaturesMess />
       <Section__Table />
+      <Section__Last />
     </>
   );
 };
