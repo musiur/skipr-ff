@@ -33,7 +33,7 @@ const Section__FeaturesMess = () => {
                   );
                 })}
               </div>
-              <p className="text-center min-[1050px]:text-left max-w-[320px] mx-auto min-[1050px]:mx-0">
+              <p className="text-center min-[1050px]:text-left max-w-[320px] mx-auto min-[1050px]:mx-0 text-[14px] md:text-[16px]">
                 Most VPNs simply relocate your ISP address, but you remain
                 identfed, trackable and traceable.
               </p>
@@ -47,7 +47,7 @@ const Section__FeaturesMess = () => {
                 </h4>
               </div>
 
-              <p className="text-center min-[1050px]:text-left">
+              <p className="text-center min-[1050px]:text-left text-[14px] md:text-[16px]">
                 When users log in, VPNs have the capability of knowig their ISP
                 addresses. his means they know where exactly where you are
                 located.
@@ -60,7 +60,7 @@ const Section__FeaturesMess = () => {
                 THEY KNOW YOUR IDENTITY
                 <br /> AND HAVE YOUR CREDENTIALS
               </h4>
-              <p className="text-center min-[1050px]:text-left">
+              <p className="text-center min-[1050px]:text-left text-[14px] md:text-[16px]">
                 VPNs know your name, your email ID and other important
                 credentals that can be used to identfy you.
               </p>
@@ -82,7 +82,7 @@ const Section__FeaturesMess = () => {
             <br /> EXACT LOCATION.
           </h4>
 
-          <p className="text-center min-[1050px]:text-left">
+          <p className="text-center min-[1050px]:text-left text-[14px] md:text-[16px]">
             When users log in, VPNs have the capability of knowig their ISP
             addresses. his means they know where exactly where you are located.
           </p>
