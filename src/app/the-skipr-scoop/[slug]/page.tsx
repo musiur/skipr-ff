@@ -30,7 +30,7 @@ const Page = () => {
       <div className="container section pt-36">
         <BackLink />
 
-        <ANIM__FadeInOutOnScroll className="w-full grid grid-cols-1 gap-4 py-16">
+        <ANIM__FadeInOutOnScroll className="w-full grid grid-cols-1 gap-4 py-10">
           <ANIM__FadeInOutOnScroll className="space-y-4 w-full">
             <h1
               className={cn(
