@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Icon__Date from "../assets/date";
 import Icon__Eye from "../assets/eye";
+import Link from "next/link";
 
 const BlogCard = () => {
   return (
@@ -32,9 +33,11 @@ const BlogCard = () => {
               <span className="text-xs">1234</span>
             </div>
           </div>
-          <button className="max-w-[200px] min-w-[180px] px-4 py-[3px] rounded-md text-center border-darkish text-sm">
-            Read Full Version
-          </button>
+          <Link href="/the-skipr-scoop/asdfasdfadf">
+            <button className="max-w-[200px] min-w-[180px] px-4 py-[3px] rounded-md text-center border-darkish text-sm">
+              Read Full Version
+            </button>
+          </Link>
         </div>
       </div>
     </div>
