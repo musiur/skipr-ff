@@ -27,7 +27,7 @@ const Page = () => {
   return (
     <div>
       <Navbar color="black" />
-      <div className="container section pt-36">
+      <div className="container py-48">
         <BackLink />
 
         <ANIM__FadeInOutOnScroll className="w-full grid grid-cols-1 gap-4 py-10">

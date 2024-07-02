@@ -4,6 +4,7 @@ import NavLink from "./navlink";
 import clsx from "clsx";
 import { MenuIcon } from "lucide-react";
 import ANIM__ScrollFade from "../anims/fadeupdown.anim";
+import SideNavbar from "./sidenavbar";
 
 const Navbar = ({ color = "white" }: { color?: "white" | "black" }) => {
   return (
@@ -34,7 +35,7 @@ const Navbar = ({ color = "white" }: { color?: "white" | "black" }) => {
             })}
           </ul>
           <div className="block md:hidden">
-            <MenuIcon className="w-8 h-8" />
+            <SideNavbar Data__Links={Data__Links} color={color} />
           </div>
         </nav>
       </ANIM__ScrollFade>
