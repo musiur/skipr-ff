@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <>
       <Navbar color="black" />
-      <div className="container py-36 flex flex-col min-[1100px]:flex-row items-center justify-between gap-10">
+      <div className="container py-48 flex flex-col min-[1100px]:flex-row items-center justify-between gap-10">
         <ANIM__FadeInOutOnScroll className="space-y-8">
           <h1
             className={cn(

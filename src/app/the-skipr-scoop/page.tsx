@@ -4,6 +4,8 @@ import { cn } from "@udecode/cn";
 import Icon__ChevronFill from "./_utils/assets/chevron-fill";
 import BlogCard from "./_utils/components/blog__card";
 import { Bebas_Neue } from "next/font/google";
+import Icon__ChevronLeft from "./_utils/assets/chevron-left.icon";
+import Icon__ChevronRight from "./_utils/assets/chevron-right.icon";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -13,7 +15,7 @@ const bebas_neue = Bebas_Neue({
 
 const Page = () => {
   return (
-    <div className="py-36 container space-y-20">
+    <div className="py-24 container space-y-20">
       <Navbar color="black" />
       <ANIM__FadeInOutOnScroll className="flex flex-col min-[600px]:flex-row items-start min-[600px]:items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="space-y-4">
@@ -47,6 +49,20 @@ const Page = () => {
           return <BlogCard key={item} />;
         })}
       </ANIM__FadeInOutOnScroll>
+      <div className="flex flex-wrap items-center justify-center gap-3 pt-8">
+        <Icon__ChevronLeft className="mr-2" />
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => {
+          return (
+            <div
+              key={num}
+              className="w-[44px] h-[44px] bg-gray-200 text-darkish flex items-center justify-center font-bold"
+            >
+              {num}
+            </div>
+          );
+        })}
+        <Icon__ChevronRight className="ml-2" />
+      </div>
     </div>
   );
 };
