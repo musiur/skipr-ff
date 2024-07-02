@@ -14,7 +14,12 @@ const NavLink = ({
 }) => {
   const { link, text } = data;
   const pathname = usePathname();
-  const matched = pathname === link;
+  let matched = false;
+  if (pathname !== "/" && link !== "/") {
+    matched = pathname.includes(link);
+  } else if (pathname === link) {
+    matched = true;
+  }
   return (
     <Link
       href={link}

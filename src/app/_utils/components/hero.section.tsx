@@ -22,7 +22,7 @@ const bebas_neue = Bebas_Neue({
 const Section__HomeHero = () => {
   return (
     // from-[#042A45] via-[#391B72] to-[#7338AF]
-    <section className="relative z-0 bg-[linear-gradient(72deg,#042A45,#042A45,#042A45,#391B72,#7338AF,#7338AF,#7338AF)]  overflow-hidden">
+    <section className="relative z-0 bg-[linear-gradient(72deg,#042A45,#042A45,#391B72,#7338AF,#7338AF)]  overflow-hidden">
       <div className="text-5xl font-bold text-white container section flex flex-col lg:flex-row items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="py-[100px] w-full">
           <h1 className={cn(bebas_neue.className, "")}>
