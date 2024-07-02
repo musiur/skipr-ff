@@ -17,7 +17,7 @@ const ANIM__FadeInOutOnScroll: React.FC<ANIM__FadeInOutOnScrollProps> = ({
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.3,
+    threshold: 0.2,
   });
 
   useEffect(() => {

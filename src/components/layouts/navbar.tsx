@@ -57,8 +57,8 @@ const Data__Links: Type__Navlink[] = [
   },
   {
     id: 3,
-    text: "The Skipr Scope",
-    link: "/the-skipr-scope",
+    text: "The Skipr Scoop",
+    link: "/the-skipr-scoop",
   },
   {
     id: 4,
