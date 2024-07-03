@@ -21,12 +21,11 @@ const bebas_neue = Bebas_Neue({
 
 const Section__HomeHero = () => {
   return (
-    // from-[#042A45] via-[#391B72] to-[#7338AF]
     <section className="relative z-0 bg-[linear-gradient(72deg,#042A45,#042A45,#391B72,#7338AF,#7338AF)]  overflow-hidden">
       <div className="text-5xl font-bold text-white container section flex flex-col lg:flex-row items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="py-[100px] w-full">
           <h1 className={cn(bebas_neue.className, "")}>
-            <span className="underline text-[32px] xl:text-[38px] 2xl:text-[44px] mr-2">
+            <span className="underline text-[40px] xl:text-[44px] 2xl:text-[52px]">
               THE
             </span>
             &nbsp;MOST PRIVATE <br /> AND SECURE SETTING <br /> ON THE PLANET
@@ -44,10 +43,10 @@ const Section__HomeHero = () => {
                 return (
                   <li
                     key={id}
-                    className="flex items-center gap-4 max-w-[240px] [&>svg]:min-w-[50px] [&>svg]:min--[50px] font-normal text-[16px]"
+                    className="flex items-center gap-4 max-w-[240px] [&>svg]:min-w-[60px] [&>svg]:min-h-[60px] font-normal "
                   >
                     {icon}
-                    <p>{text}</p>
+                    <p className="text-[16px] leading-tight">{text}</p>
                   </li>
                 );
               }
@@ -59,24 +58,24 @@ const Section__HomeHero = () => {
               PATENT PENDING
               <br /> TECHNOLOGY
             </li>
-            <li className="hidden md:block h-16 w-[3px] bg-white"></li>
-            <li className="flex-col space-y-4">
+            <li className="hidden md:block h-[55.87px] w-[2px] bg-white"></li>
+            <li className="flex flex-col items-center justify-center space-y-4">
               <div className="flex items-center justify-center gap-8">
                 <Icon__Android />
                 <Icon__Apple />
               </div>
-              <p className="text-[14px] text-secondary">AVAILABLE</p>
+              <p className="text-[12px] text-secondary">AVAILABLE</p>
             </li>
-            <li className="hidden md:block h-16 w-[3px] bg-white"></li>
-            <li className="flex-col space-y-4">
+            <li className="hidden md:block h-[55.87px] w-[2px] bg-white"></li>
+            <li className="flex flex-col items-center justify-center space-y-4">
               <div className="flex items-center justify-center gap-8">
                 <Icon__Imac />
                 <Icon__Windows />
                 <Icon__Linux />
               </div>
-              <p className="text-[14px]">COMING VERY SOON</p>
+              <p className="text-[12px] inline-block">COMING VERY SOON</p>
             </li>
-            <li className="hidden md:block h-16 w-[3px] bg-white"></li>
+            <li className="hidden md:block h-[55.87px] w-[2px] bg-white"></li>
             <li>
               <button className="bg-[#157690] text-white border-blue-200">
                 Get Skipr Now
