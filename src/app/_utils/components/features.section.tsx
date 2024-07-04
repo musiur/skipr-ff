@@ -12,11 +12,11 @@ const bebas_neue = Bebas_Neue({
 const Section__Features = () => {
   return (
     <>
-      <section className="section md:pt-[90px] ">
+      <section className="section md:pt-[90px] [&>*]:text-darkish">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
             <h1 className={cn(bebas_neue.className, "text-center leading-10")}>
-              <span className="underline text-[32px] xl:text-[38px] 2xl:text-[44px] mr-2">
+              <span className="underline text-[40px] xl:text-[44px] 2xl:text-[52px]">
                 THE
               </span>
               &nbsp;MOST SECURE YOU CAN GET <br /> IN EVERYTHING THAT YOU DO
