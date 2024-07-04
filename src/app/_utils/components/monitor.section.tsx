@@ -15,12 +15,12 @@ const bebas_neue = Bebas_Neue({
 
 const Section__Monitor = () => {
   return (
-    <section className="container section flex flex-col justify-center items-center gap-8">
+    <section className="container section flex flex-col justify-center items-center gap-8 [&>*]:text-darkish">
       <ANIM__FadeInOutOnScroll>
         <h2
           className={cn(
             bebas_neue.className,
-            "text-center text-darkish leading-[0.9] [&>span]:text-primary"
+            "text-center leading-[0.9] [&>span]:text-primary"
           )}
         >
           ABSOLUTELY NO ONE SHOULD <br />

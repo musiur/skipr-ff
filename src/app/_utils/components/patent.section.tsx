@@ -12,12 +12,12 @@ const bebas_neue = Bebas_Neue({
 const Section__Patent = () => {
   return (
     <>
-      <section className="container pt-[90px] flex flex-col justify-center items-center gap-8">
+      <section className="container pt-[90px] flex flex-col justify-center items-center gap-8 [&>*]:text-darkish">
         <ANIM__FadeInOutOnScroll>
           <h1
             className={cn(
               bebas_neue.className,
-              "text-center leading-10 uppercase 2xl:text-[60px]"
+              "text-center leading-10 uppercase 2xl:text-[60px] "
             )}
           >
             PATENT (Pending) TECHNOLOGY.

@@ -14,7 +14,7 @@ const bebas_neue = Bebas_Neue({
 const Section__Performance = () => {
   return (
     <>
-      <section className="bg-darkish [&>*]:text-white py-48 ">
+      <section className="bg-darkish [&>*]:text-white py-24 md:py-48 ">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
             <h1
@@ -26,7 +26,7 @@ const Section__Performance = () => {
               ridiculously performant.
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-32 w-full mx-auto flex flex-col md:flex-row items-center justify-between [&>*]:text-center gap-20 md:gap-10">
+          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-16 md:pb-32 w-full mx-auto flex flex-col md:flex-row items-center justify-between [&>*]:text-center gap-20 md:gap-10">
             <li className="max-w-[300px] flex flex-col items-center justify-center gap-10">
               <div>
                 <Icon__SuperFast />

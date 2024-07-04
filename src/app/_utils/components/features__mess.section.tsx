@@ -12,7 +12,7 @@ const bebas_neue = Bebas_Neue({
 
 const Section__FeaturesMess = () => {
   return (
-    <section className="py-64 bg-darkish overflow-hidden">
+    <section className="py-32 md:py-64 bg-darkish overflow-hidden">
       <div className="container grid grid-cols-1 min-[1050px]:grid-cols-10 gap-0 space-y-4 min-[1050px]:gap-4 [&>*]:text-white">
         <div className="cols-span-1 min-[1050px]:col-span-7">
           <div className="grid grid-cols-1 min-[1050px]:grid-cols-7 gap-0 space-y-4 min-[1050px]:gap-4">
