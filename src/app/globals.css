@@ -39,9 +39,9 @@ h1 {
 }
 
 h2 {
-  @apply text-[36px] xl:text-[40px] 2xl:text-[48px];
+  @apply text-[40px] xl:text-[49.77px];
   span {
-    @apply text-[36px] xl:text-[40px] 2xl:text-[48px];
+    @apply text-[40px] xl:text-[49.77px];
   }
 }
 

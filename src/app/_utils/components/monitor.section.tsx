@@ -17,15 +17,15 @@ const Section__Monitor = () => {
   return (
     <section className="container section flex flex-col justify-center items-center gap-8">
       <ANIM__FadeInOutOnScroll>
-        <h1
+        <h2
           className={cn(
             bebas_neue.className,
-            "text-center leading-10 [&>span]:text-primary"
+            "text-center text-darkish leading-[0.9] [&>span]:text-primary"
           )}
         >
           ABSOLUTELY NO ONE SHOULD <br />
           BE ABLE TO MONITOR YOU. <span>IT IS YOUR RIGHT.</span>
-        </h1>
+        </h2>
       </ANIM__FadeInOutOnScroll>
 
       <ul className="relative w-full grid grid-cols-1 md:grid-cols-3 items-start justify-center gap-8">
@@ -103,7 +103,7 @@ const Section__Monitor = () => {
       </ul>
 
       <ANIM__FadeInOutOnScroll className="pt-8">
-        <button className="bg-primary text-white border-darkish min-w-[240px]">
+        <button className="bg-primary text-white border-darkish w-[196.54px] h-[33.3px]">
           Get Access
         </button>
       </ANIM__FadeInOutOnScroll>
