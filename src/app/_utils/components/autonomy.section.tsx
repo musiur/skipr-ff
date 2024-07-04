@@ -11,7 +11,7 @@ const bebas_neue = Bebas_Neue({
 
 const Section__Autonomy = () => {
   return (
-    <section className="container section flex flex-col justify-center items-center gap-8">
+    <section className="container section flex flex-col justify-center items-center gap-8 [&>*]:text-darkish">
       <ANIM__FadeInOutOnScroll>
         <h1
           className={cn(
@@ -46,7 +46,7 @@ const Section__Autonomy = () => {
         </li>
       </ANIM__FadeInOutOnScroll>
       <ANIM__FadeInOutOnScroll className="pt-8">
-        <button className="bg-secondary text-darkish border-darkish min-w-[240px]">
+        <button className="bg-secondary text-darkish text-[17.55px] border-darkish w-[196.54px] h-[33.3px]">
           Learn More
         </button>
       </ANIM__FadeInOutOnScroll>

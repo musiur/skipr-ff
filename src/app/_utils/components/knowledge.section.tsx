@@ -11,16 +11,16 @@ const bebas_neue = Bebas_Neue({
 
 const Section__Knowledge = () => {
   return (
-    <section className="container section flex flex-col justify-center items-center gap-8">
+    <section className="container section flex flex-col justify-center items-center gap-8 [&>*]:text-darkish">
       <ANIM__FadeInOutOnScroll>
-        <h1
+        <h3
           className={cn(
             bebas_neue.className,
-            "text-center leading-10 uppercase 2xl:text-[60px]"
+            "text-center text-[48px] xl:text-[65.63px] uppercase leading-[1]"
           )}
         >
           zero knowledge guarantee
-        </h1>
+        </h3>
       </ANIM__FadeInOutOnScroll>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[62px] [&>*]:text-center">
         {Data__Cards.map((card) => {
@@ -28,12 +28,12 @@ const Section__Knowledge = () => {
           return (
             <ANIM__FadeInOutOnScroll
               key={id}
-              className="flex flex-col items-center justify-center gap-4"
+              className="flex flex-col items-center justify-start gap-4"
             >
               <h2
                 className={cn(
                   bebas_neue.className,
-                  "text-center leading-10 uppercase flex flex-col items-center justify-center gap-0"
+                  "text-center text-[44px] text-darkish xl:text-[56px] leading-[0.8] uppercase flex flex-col items-center justify-center gap-0"
                 )}
               >
                 {title}
@@ -43,7 +43,7 @@ const Section__Knowledge = () => {
                 alt=""
                 width={500}
                 height={500}
-                className="max-h-[250px] w-auto -mt-8"
+                className="max-h-[250px] min-h-[250px] w-auto -mt-8"
               />
               <p className="max-w-[280px] md:max-w-[360px] mx-auto">{text}</p>
             </ANIM__FadeInOutOnScroll>
@@ -51,7 +51,7 @@ const Section__Knowledge = () => {
         })}
       </div>
       <ANIM__FadeInOutOnScroll className="pt-8">
-        <button className="bg-secondary text-darkish border-darkish min-w-[240px]">
+        <button className="bg-secondary text-darkish text-[17.55px] border-darkish w-[196.54px] h-[33.3px]">
           Know The Tech
         </button>
       </ANIM__FadeInOutOnScroll>

@@ -46,7 +46,7 @@ h2 {
 }
 
 button {
-  @apply min-w-[196.55px] min-h-[33px] text-[17.88px] text-center flex items-center justify-center w-full rounded border-2 px-8 font-medium;
+  @apply min-w-[196.55px] min-h-[33px] text-[17.88px] text-center flex items-center justify-center w-full rounded border-2 px-4 font-medium;
 }
 
 .clip-path-curve {

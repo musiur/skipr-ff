@@ -12,7 +12,7 @@ const bebas_neue = Bebas_Neue({
 const Section__Features = () => {
   return (
     <>
-      <section className="section pt-[90px] ">
+      <section className="section md:pt-[90px] ">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
             <h1 className={cn(bebas_neue.className, "text-center leading-10")}>
@@ -22,7 +22,7 @@ const Section__Features = () => {
               &nbsp;MOST SECURE YOU CAN GET <br /> IN EVERYTHING THAT YOU DO
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-32 w-full grid grid-cols-1 min-[460px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 [&>*]:text-center gap-10">
+          <ANIM__FadeInOutOnScroll className="px-0 md:px-[12%] pb-16 md:pb-32 w-full grid grid-cols-1 min-[460px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 [&>*]:text-center gap-10">
             {Data__FeatureCards.map((item) => {
               const { id, text, image } = item;
               return (
