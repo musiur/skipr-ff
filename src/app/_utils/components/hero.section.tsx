@@ -59,16 +59,16 @@ const Section__HomeHero = () => {
               <br /> TECHNOLOGY
             </li>
             <li className="hidden md:block h-[55.87px] w-[2px] bg-white"></li>
-            <li className="flex flex-col items-center justify-center space-y-4">
-              <div className="flex items-center justify-center gap-8">
+            <li className="flex flex-col items-center justify-center space-y-2">
+              <div className="flex items-center justify-center gap-6">
                 <Icon__Android />
                 <Icon__Apple />
               </div>
               <p className="text-[12px] text-secondary">AVAILABLE</p>
             </li>
             <li className="hidden md:block h-[55.87px] w-[2px] bg-white"></li>
-            <li className="flex flex-col items-center justify-center space-y-4">
-              <div className="flex items-center justify-center gap-8">
+            <li className="flex flex-col items-center justify-center space-y-2">
+              <div className="flex items-center justify-center gap-6">
                 <Icon__Imac />
                 <Icon__Windows />
                 <Icon__Linux />
