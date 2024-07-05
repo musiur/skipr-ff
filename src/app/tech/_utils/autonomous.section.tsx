@@ -38,9 +38,9 @@ const Section__Autonomous = () => {
             operations
           </h1>
         </ANIM__FadeInOutOnScroll>
-        <ANIM__FadeInOutOnScroll className="grid grid-cols-1 sm:grid-cols-2 gap-10 list-none">
-          <li className="max-w-[280px] md:max-w-[320px] text-sm space-y-4">
-            <h4 className="text-lg md:text-xl">
+        <ANIM__FadeInOutOnScroll className="grid grid-cols-1 sm:grid-cols-2 gap-[130px] list-none [&>*:p]:text-[21px]">
+          <li className="max-w-[280px] md:max-w-[320px] space-y-4">
+            <h4 className="text-[20px] md:text-[26px]">
               ZERO HUMAN <br />
               ERRORS
             </h4>
@@ -50,15 +50,17 @@ const Section__Autonomous = () => {
               within the app.
             </p>
           </li>
-          <li className="max-w-[280px] md:max-w-[300px] text-sm space-y-4">
-            <h4 className="text-lg md:text-xl">AUTOMATIC AGENT SHUTDOWN</h4>
+          <li className="max-w-[280px] md:max-w-[300px] space-y-4">
+            <h4 className="text-[20px] md:text-[26px]">
+              AUTOMATIC AGENT SHUTDOWN
+            </h4>
             <p>
               Helpers self-destruct afer a set tme, ensuring efcient resource
               management and minimal energy consumpton, leaving you untraceable.
             </p>
           </li>
-          <li className="max-w-[280px] md:max-w-[300px] text-sm space-y-4">
-            <h4 className="text-lg md:text-xl">DYNAMIC ADJUSTMENT</h4>
+          <li className="max-w-[280px] md:max-w-[300px] space-y-4">
+            <h4 className="text-[20px] md:text-[26px]">DYNAMIC ADJUSTMENT</h4>
             <p>
               The system dynamically adjusts the number of helpers based on
               actvity levels, creatng new helpers during increased app usage.

@@ -11,7 +11,7 @@ const bebas_neue = Bebas_Neue({
 
 const Section__Credential = () => {
   return (
-    <section className="container section flex flex-col justify-center items-center gap-8">
+    <section className="container section flex flex-col justify-center items-center gap-8 [&>*]:text-darkish">
       <ANIM__FadeInOutOnScroll>
         <h1
           className={cn(
