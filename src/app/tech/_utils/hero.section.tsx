@@ -15,27 +15,40 @@ const bebas_neue = Bebas_Neue({
 const Section__Hero = () => {
   return (
     <>
-      <div className="container py-48 [@media(min-width:700px)]:py-16 overflow-hidden">
-        <ANIM__FadeInOutOnScroll className="flex flex-col [@media(min-width:600px)]:flex-row items-center justify-between gap-4">
+      <div className="container py-48 min-[800px]:py-16 overflow-hidden [&>*]:text-darkish">
+        <ANIM__FadeInOutOnScroll className="flex flex-col min-[600px]:flex-row items-center justify-between gap-4">
           <ANIM__FadeInOutOnScroll className="space-y-4">
-            <h1
+            <div className="flex flex-col text-left">
+              {["100% PRIVACY", "BY DESIGN."].map((item: string) => {
+                return (
+                  <p
+                    key={item}
+                    className={cn(
+                      bebas_neue.className,
+                      "uppercase text-[60px] lg:text-[72px] 2xl:text-[80px] leading-[60px] lg:leading-[72px]"
+                    )}
+                  >
+                    {item}
+                  </p>
+                );
+              })}
+            </div>
+            {/* <p
               className={cn(
                 bebas_neue.className,
-                "text-left leading-10 uppercase 2xl:text-[60px] font-bold"
+                "text-left leading-[10] uppercase text-[48px] xl:text-[60px] 2xl:text-[72px] font-bold"
               )}
             >
-              100% PRIVACY
-              <br />
-              BY DESIGN.
-            </h1>
+              
+            </p> */}
             <ul className="space-y-2 pb-8">
               {Data__ListOne.map((item, index) => {
                 return (
                   <li
                     key={index}
-                    className="flex items-center gap-4 text-[16px]"
+                    className="flex items-center gap-4 text-[14px]"
                   >
-                    <div className="w-3 h-3 rounded-full border-2 border-darkish" />
+                    <div className="w-2 h-2 rounded-full border-2 border-darkish" />
                     {item}
                   </li>
                 );
@@ -45,7 +58,7 @@ const Section__Hero = () => {
               Get Access
             </button>
           </ANIM__FadeInOutOnScroll>
-          <div className="relative w-[350px] h-[350px] [@media(min-width:600px)]:w-[480px] [@media(min-width:600px)]:h-[480px] [@media(min-width:1100px)]:w-[700px] [@media(min-width:1100px)]:h-[700px] flex items-center justify-center">
+          <div className="relative w-[350px] h-[350px] min-[600px]:w-[480px] min-[600px]:h-[480px] min-[1100px]:w-[700px] min-[1100px]:h-[700px] flex items-center justify-center">
             <div className="absolute top-[0%] left-[0%] z-[-1] flex items-center justify-center">
               <ANIM__DeployPurple className="min-w-80 min-h-80" />
             </div>
@@ -54,7 +67,7 @@ const Section__Hero = () => {
               alt="tech hero image"
               width={1000}
               height={1000}
-              className="w-[200px] h-[200px] [@media(min-width:600px)]:w-[250px] [@media(min-width:600px)]:h-[250px] [@media(min-width:1100px)]:w-[350px] [@media(min-width:1100px)]:h-[350px]"
+              className="w-[200px] h-[200px] min-[600px]:w-[250px] min-[600px]:h-[250px] min-[1100px]:w-[350px] min-[1100px]:h-[350px]"
             />
           </div>
         </ANIM__FadeInOutOnScroll>

@@ -11,7 +11,7 @@ const bebas_neue = Bebas_Neue({
 
 const Section__Burner = () => {
   return (
-    <div className="relative overflow-hiden">
+    <div className="relative overflow-hiden [&>*]:text-[#001C2F]">
       <div className="container section flex flex-col md:flex-row justify-center items-center gap-16">
         {/* <div className="w-full">
           
@@ -31,29 +31,31 @@ const Section__Burner = () => {
                 "leading-10 uppercase 2xl:text-[60px]"
               )}
             >
-              AUTONOMOUS
+              THE SKIPR
               <br />
-              operations
+              BURN
             </h1>
           </ANIM__FadeInOutOnScroll>
           <ANIM__FadeInOutOnScroll className="grid grid-cols-1 gap-10 list-none">
-            <li className="text-sm space-y-4">
-              <h4 className="text-lg md:text-xl">UNBEATABLE UNTRACEABILITY</h4>
+            <li className="text-xs space-y-4">
+              <h4 className="text-[20px] md:text-[26px]">
+                UNBEATABLE UNTRACEABILITY
+              </h4>
               <p>
                 Skipr&apos;s burn mechanism ensures your data isn&apos;t just
                 protected during online actvites but ceases to exist aferwards,
                 leaving no traces.
               </p>
             </li>
-            <li className="text-sm space-y-4">
-              <h4 className="text-lg md:text-xl">NO SERVERS LEFT</h4>
+            <li className="text-xs space-y-4">
+              <h4 className="text-[20px] md:text-[26px]">NO SERVERS LEFT</h4>
               <p>
                 Servers are competely burned every 24 hours and new ones are
                 used to provide you with a history-free experience each tme you
                 connect.
               </p>
             </li>
-            <li className="text-sm space-y-4">
+            <li className="text-xs space-y-4">
               <h4 className="text-lg md:text-xl">
                 A CLEAN SLATE EVERY SINGLE TIME
               </h4>
