@@ -13,7 +13,7 @@ const bebas_neue = Bebas_Neue({
 const Section__Table = () => {
   return (
     <section>
-      <ANIM__FadeInOutOnScroll className="section bg-darkish [&>*]:text-white">
+      <ANIM__FadeInOutOnScroll className="section bg-[#002335] [&>*]:text-white">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
             <h1
@@ -25,7 +25,7 @@ const Section__Table = () => {
               only skipr
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <div className="w-full bg-darkish text-white [&>*]:text-[16px]">
+          <div className="w-full bg-[#002335] text-white [&>*]:text-[16px]">
             <div className="w-full space-y-8 lg:space-y-2">
               <div className="w-full flex flex-col lg:flex-row justify-center gap-2">
                 <div className="hidden lg:flex max-w-full w-full lg:max-w-[652.547px] lg:w-[652.547px] border-[2px] border-white pl-8 py-4 pr-6 text-darkish">
@@ -35,7 +35,7 @@ const Section__Table = () => {
                   <div className="max-w-full w-full lg:max-w-[204.25px] lg:w-[204.25px] border-[2px] border-white py-4 flex items-center justify-center">
                     MOST VPNs
                   </div>
-                  <div className="max-w-full w-full lg:max-w-[186.469px] lg:w-[186.469px] border-[2px] border-white py-4 flex items-center justify-center gap-2 text-secondary">
+                  <div className="max-w-full w-full lg:max-w-[186.469px] lg:w-[186.469px] border-[2px] border-white py-4 flex items-center justify-center gap-2 bg-[#003558] text-secondary">
                     <BrandIcon className="fill-secondary max-w-[32px]" />
                     SKIPR
                   </div>
