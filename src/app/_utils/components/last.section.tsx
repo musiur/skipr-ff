@@ -50,11 +50,12 @@ const Section__Last = () => {
       <Image
         src="gradient-bg.svg"
         alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
+        // layout="fill"
+        // objectFit="cover"
+        // objectPosition="center"
+        fill={true}
         quality={100}
-        className="z-[-1] bg-darkish"
+        className="z-[-1] bg-darkish bg-cover bg-center"
       />
     </section>
   );
