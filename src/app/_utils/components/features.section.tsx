@@ -12,7 +12,7 @@ const bebas_neue = Bebas_Neue({
 const Section__Features = () => {
   return (
     <>
-      <section className="section md:pt-[90px] [&>*]:text-darkish">
+      <section className="section [&>*]:text-darkish">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
             <h1 className={cn(bebas_neue.className, "text-center leading-10")}>

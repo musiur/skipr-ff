@@ -25,17 +25,17 @@ const Section__Table = () => {
               only skipr
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <div className="w-full bg-darkish text-white [&>*]:text-[16px] ">
-            <div className="w-full space-y-2">
-              <div className="flex flex-col min-[1024px]:flex-row gap-2">
-                <div className="w-full border-[2px] border-white text-darkish py-4 hidden min-[1024px]:flex items-center justify-center">
+          <div className="w-full bg-darkish text-white [&>*]:text-[16px]">
+            <div className="w-full space-y-8 lg:space-y-2">
+              <div className="w-full flex flex-col lg:flex-row justify-center gap-2">
+                <div className="hidden lg:flex max-w-full w-full lg:max-w-[652.547px] lg:w-[652.547px] border-[2px] border-white pl-8 py-4 pr-6 text-darkish">
                   SFSDSD
                 </div>
-                <div className="min-w-[400px] flex flex-row gap-2">
-                  <div className="max-w-full w-full min-[1024px]:max-w-[204.25px] min-[1024px]:w-[204.25px] border-[2px] border-white py-4 flex items-center justify-center">
+                <div className="min-w-[260px] [@media(min-width:450px)]:min-w-[400px] flex flex-row gap-2">
+                  <div className="max-w-full w-full lg:max-w-[204.25px] lg:w-[204.25px] border-[2px] border-white py-4 flex items-center justify-center">
                     MOST VPNs
                   </div>
-                  <div className="max-w-full w-full min-[1024px]:max-w-[186.469px] min-[1024px]:w-[186.469px] border-[2px] border-white py-4 flex items-center justify-center gap-2 text-secondary">
+                  <div className="max-w-full w-full lg:max-w-[186.469px] lg:w-[186.469px] border-[2px] border-white py-4 flex items-center justify-center gap-2 text-secondary">
                     <BrandIcon className="fill-secondary max-w-[32px]" />
                     SKIPR
                   </div>
@@ -45,14 +45,14 @@ const Section__Table = () => {
                 const { id, text } = row;
                 return (
                   <div
-                    className="flex flex-col min-[1024px]:flex-row gap-2"
+                    className="flex flex-col lg:flex-row gap-2 w-full justify-center"
                     key={id}
                   >
-                    <div className="max-w-full w-full min-[1024px]:max-w-[652.547px] min-[1024]:w-[652.547px] border-[2px] border-white pl-8 py-4 pr-6 text-secondary">
+                    <div className="max-w-full w-full lg:max-w-[652.547px] lg:w-[652.547px] border-[2px] border-white pl-8 py-4 pr-6 text-secondary text-left lg:text-right">
                       {text}
                     </div>
-                    <div className="min-w-[400px] flex flex-row gap-2">
-                      <div className="max-w-full w-full min-[1024px]:max-w-[204.25px] min-[1024px]:w-[204.25px] border-[2px] border-white flex items-center justify-center py-4 min-[1024px]:py-0">
+                    <div className="min-w-[260px] [@media(min-width:450px)]:min-w-[400px] flex flex-row gap-2">
+                      <div className="max-w-full w-full lg:max-w-[204.25px] lg:w-[204.25px] border-[2px] border-white flex items-center justify-center py-4 lg:py-0">
                         <Image
                           src="close-icon.svg"
                           alt=""
@@ -61,7 +61,7 @@ const Section__Table = () => {
                           className="w-6 h-6"
                         />
                       </div>
-                      <div className="max-full w-full min-[1024px]:max-w-[186.469px] min-[1024px]:w-[186.469px] border-[2px] border-white bg-secondary flex items-center justify-center py-4 min-[1024px]:py-0">
+                      <div className="max-full w-full lg:max-w-[186.469px] lg:w-[186.469px] border-[2px] border-white bg-secondary flex items-center justify-center py-4 lg:py-0">
                         <Image
                           src="check-icon.svg"
                           alt=""

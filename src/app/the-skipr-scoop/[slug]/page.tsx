@@ -40,7 +40,7 @@ const Page = () => {
             >
               THE POWER OF AUTONOMY
             </h1>
-            <div className="w-full flex flex-col min-[600px]:flex-row items-start min-[600px]:items-center justify-between gap-4">
+            <div className="w-full flex flex-col [@media(min-width:600px)]:flex-row items-start [@media(min-width:600px)]:items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <Icon__Date className="w-4 h-4" />
