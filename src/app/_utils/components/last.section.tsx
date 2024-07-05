@@ -12,7 +12,7 @@ const bebas_neue = Bebas_Neue({
 
 const Section__Last = () => {
   return (
-    <section className="relative bg-none">
+    <section className="w-full relative bg-none">
       <ANIM__FadeInOutOnScroll className="section bg-none [&>*]:text-white">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
@@ -50,12 +50,8 @@ const Section__Last = () => {
       <Image
         src="gradient-bg.svg"
         alt="Background Image"
-        // layout="fill"
-        // objectFit="cover"
-        // objectPosition="center"
         fill={true}
-        quality={100}
-        className="z-[-1] bg-darkish bg-cover bg-center"
+        className="z-[-1] bg-darkish object-cover object-center"
       />
     </section>
   );
