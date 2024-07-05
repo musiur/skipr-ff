@@ -25,68 +25,55 @@ const Section__Table = () => {
               only skipr
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <div className="w-full flex justify-center p-4 overflow-x-auto">
-            <div>
-              <table className="w-full bg-darkish text-white border-collapse [&>*]:text-[16px]">
-                <thead>
-                  <tr className="gap-8 mb-2">
-                    <th className="pb-1 pr-1 pl-0">
-                      <div className="h-full p-4 border-[2px] border-white text-darkish px-8 py-4">
-                        ...
+          <div className="w-full bg-darkish text-white [&>*]:text-[16px] ">
+            <div className="w-full space-y-2">
+              <div className="flex flex-col min-[1024px]:flex-row gap-2">
+                <div className="w-full border-[2px] border-white text-darkish py-4 hidden min-[1024px]:flex items-center justify-center">
+                  SFSDSD
+                </div>
+                <div className="min-w-[400px] flex flex-row gap-2">
+                  <div className="max-w-full w-full min-[1024px]:max-w-[204.25px] min-[1024px]:w-[204.25px] border-[2px] border-white py-4 flex items-center justify-center">
+                    MOST VPNs
+                  </div>
+                  <div className="max-w-full w-full min-[1024px]:max-w-[186.469px] min-[1024px]:w-[186.469px] border-[2px] border-white py-4 flex items-center justify-center gap-2 text-secondary">
+                    <BrandIcon className="fill-secondary max-w-[32px]" />
+                    SKIPR
+                  </div>
+                </div>
+              </div>
+              {Data__TableRows.map((row) => {
+                const { id, text } = row;
+                return (
+                  <div
+                    className="flex flex-col min-[1024px]:flex-row gap-2"
+                    key={id}
+                  >
+                    <div className="max-w-full w-full min-[1024px]:max-w-[652.547px] min-[1024]:w-[652.547px] border-[2px] border-white pl-8 py-4 pr-6 text-secondary">
+                      {text}
+                    </div>
+                    <div className="min-w-[400px] flex flex-row gap-2">
+                      <div className="max-w-full w-full min-[1024px]:max-w-[204.25px] min-[1024px]:w-[204.25px] border-[2px] border-white flex items-center justify-center py-4 min-[1024px]:py-0">
+                        <Image
+                          src="close-icon.svg"
+                          alt=""
+                          width={100}
+                          height={100}
+                          className="w-6 h-6"
+                        />
                       </div>
-                    </th>
-                    <th className="px-1 pb-1">
-                      <div className="p-4 border-[2px] border-white px-8 py-4">
-                        MOST VPNs
+                      <div className="max-full w-full min-[1024px]:max-w-[186.469px] min-[1024px]:w-[186.469px] border-[2px] border-white bg-secondary flex items-center justify-center py-4 min-[1024px]:py-0">
+                        <Image
+                          src="check-icon.svg"
+                          alt=""
+                          width={100}
+                          height={100}
+                          className="w-6 h-6"
+                        />
                       </div>
-                    </th>
-                    <th className="pl-1 pr-0 pb-1">
-                      <div className="p-4 border-[2px] border-white px-8 py-4">
-                        <div className="flex items-center justify-center gap-2 text-secondary">
-                          <BrandIcon className="fill-secondary max-w-[32px]" />
-                          SKIPR
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Data__TableRows.map((row) => {
-                    const { id, text } = row;
-                    return (
-                      <tr className="gap-8" key={id}>
-                        <td className="py-1 pr-1 pl-0 min-w-[652.547px]">
-                          <div className="border-[2px] border-white pl-8 py-4 pr-6 text-right text-secondary">
-                            {text}
-                          </div>
-                        </td>
-                        <td className="p-1  min-w-[204.25px]">
-                          <div className="p-4 border-[2px] border-white px-8 py-4">
-                            <Image
-                              src="close-icon.svg"
-                              alt=""
-                              width={100}
-                              height={100}
-                              className="w-6 h-6 mx-auto"
-                            />
-                          </div>
-                        </td>
-                        <td className="pl-1 pr-0 py-1  min-w-[186.469px]">
-                          <div className="p-4 border-[2px] border-white bg-secondary px-8 py-4">
-                            <Image
-                              src="check-icon.svg"
-                              alt=""
-                              width={100}
-                              height={100}
-                              className="w-6 h-6 mx-auto"
-                            />
-                          </div>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
