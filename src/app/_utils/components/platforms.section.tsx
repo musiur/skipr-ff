@@ -12,8 +12,8 @@ const bebas_neue = Bebas_Neue({
 const Section__Platforms = () => {
   return (
     <>
-      <section className="pb-24">
-        <div className="container flex flex-col justify-center items-center gap-8">
+      <section className="pb-24 [&>*]:text-darkish">
+        <div className="container flex flex-col justify-center items-center gap-8 ">
           <ANIM__FadeInOutOnScroll>
             <h1
               className={cn(
