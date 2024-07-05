@@ -24,12 +24,12 @@ const Section__Platforms = () => {
               available now on ios and android
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <div className="inline-flex items-start justify-center gap-14 mx-auto">
+          <div className="inline-flex flex-col [@media(min-width:650px)]:flex-row items-center [@media(min-width:650px)]:items-start justify-center gap-14 mx-auto">
             <ANIM__FadeInOutOnScroll className="flex flex-col items-center justify-center [&>*]:text-center gap-4">
               <h3 className="text-[20px] md:text-[24px] text-center">
                 AVAILABLE
               </h3>
-              <ANIM__FadeInOutOnScroll className="flex flex-row flex-wrap gap-4 items-center justify-center">
+              <ANIM__FadeInOutOnScroll className="flex flex-col [@media(min-width:650px)]:flex-row flex-wrap gap-4 items-center justify-center">
                 {Data__FeatureCards.slice(0, 2).map((item) => {
                   const { id, text, image } = item;
                   return (
@@ -56,7 +56,7 @@ const Section__Platforms = () => {
               <h3 className="text-[20px] md:text-[24px] text-center">
                 COMING VERY SOON
               </h3>
-              <ANIM__FadeInOutOnScroll className="flex flex-row flex-wrap md:flex-nowrap gap-4 items-center justify-center">
+              <ANIM__FadeInOutOnScroll className="flex flex-col [@media(min-width:650px)]:flex-row flex-wrap md:flex-nowrap gap-4 items-center justify-center">
                 {Data__FeatureCards.slice(2).map((item) => {
                   const { id, text, image } = item;
                   return (
