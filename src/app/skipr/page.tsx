@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <>
       <Navbar color="black" />
-      <div className="container py-48 flex flex-col min-[1100px]:flex-row items-center justify-between gap-10">
+      <div className="container py-48 flex flex-col [@media(min-width:1100px)]:flex-row items-center justify-between gap-10">
         <ANIM__FadeInOutOnScroll className="space-y-8">
           <h1
             className={cn(
@@ -54,7 +54,7 @@ const Page = () => {
             </ul>
           </div>
         </ANIM__FadeInOutOnScroll>
-        <div className="flex flex-col min-[780px]:flex-row items-center justify-end gap-10">
+        <div className="flex flex-col [@media(min-width:780px)]:flex-row items-center justify-end gap-10">
           {Data__PriceCards.map((card) => {
             return <PriceCard key={card.id} data={card} />;
           })}

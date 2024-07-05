@@ -17,7 +17,7 @@ const Page = () => {
   return (
     <div className="py-24 container space-y-20">
       <Navbar color="black" />
-      <ANIM__FadeInOutOnScroll className="flex flex-col min-[600px]:flex-row items-start min-[600px]:items-center justify-between gap-4">
+      <ANIM__FadeInOutOnScroll className="flex flex-col [@media(min-width:600px)]:flex-row items-start [@media(min-width:600px)]:items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="space-y-4">
           <h1
             className={cn(

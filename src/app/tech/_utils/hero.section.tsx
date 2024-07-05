@@ -15,8 +15,8 @@ const bebas_neue = Bebas_Neue({
 const Section__Hero = () => {
   return (
     <>
-      <div className="container py-48 min-[700px]:py-16 overflow-hidden">
-        <ANIM__FadeInOutOnScroll className="flex flex-col min-[600px]:flex-row items-center justify-between gap-4">
+      <div className="container py-48 [@media(min-width:700px)]:py-16 overflow-hidden">
+        <ANIM__FadeInOutOnScroll className="flex flex-col [@media(min-width:600px)]:flex-row items-center justify-between gap-4">
           <ANIM__FadeInOutOnScroll className="space-y-4">
             <h1
               className={cn(
@@ -45,7 +45,7 @@ const Section__Hero = () => {
               Get Access
             </button>
           </ANIM__FadeInOutOnScroll>
-          <div className="relative w-[350px] h-[350px] min-[600px]:w-[480px] min-[600px]:h-[480px] min-[1100px]:w-[700px] min-[1100px]:h-[700px] flex items-center justify-center">
+          <div className="relative w-[350px] h-[350px] [@media(min-width:600px)]:w-[480px] [@media(min-width:600px)]:h-[480px] [@media(min-width:1100px)]:w-[700px] [@media(min-width:1100px)]:h-[700px] flex items-center justify-center">
             <div className="absolute top-[0%] left-[0%] z-[-1] flex items-center justify-center">
               <ANIM__DeployPurple className="min-w-80 min-h-80" />
             </div>
@@ -54,7 +54,7 @@ const Section__Hero = () => {
               alt="tech hero image"
               width={1000}
               height={1000}
-              className="w-[200px] h-[200px] min-[600px]:w-[250px] min-[600px]:h-[250px] min-[1100px]:w-[350px] min-[1100px]:h-[350px]"
+              className="w-[200px] h-[200px] [@media(min-width:600px)]:w-[250px] [@media(min-width:600px)]:h-[250px] [@media(min-width:1100px)]:w-[350px] [@media(min-width:1100px)]:h-[350px]"
             />
           </div>
         </ANIM__FadeInOutOnScroll>
