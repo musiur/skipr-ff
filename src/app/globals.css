@@ -32,9 +32,9 @@
 }
 
 h1 {
-  @apply text-[48px] xl:text-[52px] 2xl:text-[60px];
+  @apply text-[32px] md:text-[48px] xl:text-[52px] 2xl:text-[60px];
   span {
-    @apply text-[40px] xl:text-[52px] 2xl:text-[60px];
+    @apply text-[32px] md:text-[48px] xl:text-[52px] 2xl:text-[60px];
   }
 }
 

@@ -28,11 +28,11 @@ const Section__Monitor = () => {
         </h2>
       </ANIM__FadeInOutOnScroll>
 
-      <ul className="relative w-full grid grid-cols-1 md:grid-cols-3 items-start justify-center gap-8">
+      <ul className="relative w-auto md:w-full flex flex-col md:grid grid-cols-1 md:grid-cols-3 items-start justify-start md:justify-center gap-8">
         {Data__Cards.map((card) => (
           <li
             key={card.id}
-            className="w-full flex flex-col justify-center items-center gap-4"
+            className="w-auto md:w-full flex flex-row md:flex-col jusitfy-start md:justify-center items-start md:items-center gap-8"
           >
             <div className="relative min-w-20 max-w-20 min-h-20 max-h-20 rounded-full flex items-center justify-center">
               {card.id === 3 ? (
@@ -57,49 +57,52 @@ const Section__Monitor = () => {
                         card.id === 3,
                       "min-w-12 max-w-12 max-h-12 min-h-12 bg-white":
                         card.id !== 3,
-                      "bg-gradient-to-tr from-white via-[#fbf8fd] to-[#f0dbff]":
+                      "bg-gradient-to-b md:bg-gradient-to-r from-white via-[#fbf8fd] to-[#f0dbff]":
                         card.id === 2,
                     }
                   )}
                 ></div>
               </div>
             </div>
-            <ANIM__FadeInOutOnScroll className="flex flex-col items-center justify-center gap-0">
-              <h2 className="text-[16px] md:text-[22px] font-black">
-                {card.title}
-              </h2>
-              <p
-                className={clsx("text-[14px] md:text-[16px] font-bold", {
-                  "text-primary": card.id === 3,
-                })}
-              >
-                {card.subTitle}
-              </p>
-            </ANIM__FadeInOutOnScroll>
-            <ANIM__FadeInOutOnScroll>
-              {card.id === 3 ? (
-                <Icon__EyeOff className="h-[36px]" />
-              ) : (
-                <Icon__EyeOn />
-              )}
-            </ANIM__FadeInOutOnScroll>
+            <div className="flex flex-col items-start md:items-center justify-center gap-4">
+              <ANIM__FadeInOutOnScroll className="flex flex-col items-start md:items-center justify-center gap-0">
+                <h2 className="text-[16px] md:text-[22px] font-black">
+                  {card.title}
+                </h2>
+                <p
+                  className={clsx("text-[14px] md:text-[16px] font-bold", {
+                    "text-primary": card.id === 3,
+                  })}
+                >
+                  {card.subTitle}
+                </p>
+              </ANIM__FadeInOutOnScroll>
+              <ANIM__FadeInOutOnScroll>
+                {card.id === 3 ? (
+                  <Icon__EyeOff className="h-[36px]" />
+                ) : (
+                  <Icon__EyeOn />
+                )}
+              </ANIM__FadeInOutOnScroll>
 
-            <ANIM__FadeInOutOnScroll className="flex flex-col items-center justify-center gap-2">
-              <h3 className="text-[14px] md:text-[16px] font-bold">
-                {card.subSubTitle}
-              </h3>
-              <ul className="flex flex-col items-center justify-center gap-0">
-                {card.list.map((item) => (
-                  <li key={item} className="text-[18px]">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </ANIM__FadeInOutOnScroll>
+              <ANIM__FadeInOutOnScroll className="flex flex-col items-start md:items-center justify-center gap-2">
+                <h3 className="text-[14px] md:text-[16px] font-bold">
+                  {card.subSubTitle}
+                </h3>
+                <ul className="flex flex-col items-start md:items-center justify-center gap-0">
+                  {card.list.map((item) => (
+                    <li key={item} className="text-[18px]">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </ANIM__FadeInOutOnScroll>
+            </div>
           </li>
         ))}
-        <div className="absolute hidden md:block z-0 top-[43px] left-0 w-[66%] ml-[16%] min-h-3 bg-gradient-to-r from-white via-white to-[#e4c2fa] border-y-[3px] border-darkish"></div>
-        <div className="absolute hidden md:block z-10 top-[46px] left-0 w-[66%] ml-[16%] min-h-[9px] bg-gradient-to-r from-white via-white to-[#793EF7] border-y-[3px] border-darkish/0"></div>
+        <div className="absolute z-0 top-[20px] md:top-[43px] left-0 w-[16px] md:w-[66%] ml-[33px] md:ml-[16%] h-[75%] md:h-3 min-h-3 bg-gradient-to-b md:bg-gradient-to-r from-white via-white to-[#e4c2fa] border-x-[3px] md:border-x-0 border-y-0 md:border-y-[3px] border-darkish" />
+
+        <div className="absolute z-10 top-[22px] md:top-[46px] left-0 w-[10px] md:w-[66%] ml-[36px] md:ml-[16%] h-[75%] md:h-[9px] min-h-[9px] bg-gradient-to-b md:bg-gradient-to-r from-white via-59% md:via-46% via-white to-[#793EF7] border-darkish " />
       </ul>
 
       <ANIM__FadeInOutOnScroll className="pt-8">
