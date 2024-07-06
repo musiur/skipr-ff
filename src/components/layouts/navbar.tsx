@@ -11,7 +11,7 @@ const Navbar = ({ color = "white" }: { color?: "white" | "black" }) => {
     <header>
       <ANIM__ScrollFade
         className={clsx(
-          "fixed top-0 left-0 w-full z-50 py-[44px] backdrop-blur-2xl",
+          "fixed top-0 left-0 w-full z-50 py-[20px] md:py-[44px]",
           {
             "[&>*]:text-white": color === "white",
             "[&>*]:text-black": color === "black",

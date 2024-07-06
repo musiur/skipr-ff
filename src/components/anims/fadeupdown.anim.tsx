@@ -61,7 +61,7 @@ const ANIM__ScrollFade: React.FC<ANIM__ScrollFadeProps> = ({
       animate={controls}
       variants={variants}
       className={clsx(className, {
-        "bg-primary/20": scrollY > 30,
+        "bg-darkish/20 backdrop-blur-2xl": scrollY > 30,
       })}
     >
       {children}

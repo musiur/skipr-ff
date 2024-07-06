@@ -26,7 +26,7 @@ const Section__HomeHero = () => {
         src="/home-hero-bg.svg"
         alt=""
         fill={true}
-        className="z-[-1] object-cover object-center"
+        className="z-[-1] object-cover object-center bg-primary"
       />
       <div className="text-5xl font-bold text-white container section flex flex-col lg:flex-row items-center justify-between gap-4">
         <ANIM__FadeInOutOnScroll className="py-[40px] md:py-[100px] w-full">
@@ -36,7 +36,7 @@ const Section__HomeHero = () => {
             </span>
             &nbsp;MOST PRIVATE <br /> AND SECURE SETTING <br /> ON THE PLANET
           </h1>
-          <ul className="pt-[20px] md:pt-[50px] flex  flex-wrap items-start sm:items-center gap-4">
+          <ul className="pt-[32px] md:pt-[50px] flex  flex-wrap items-start sm:items-center gap-4">
             <li
               key={1}
               className="text-[#9900FF] text-[12px] md:text-[16px] font-black max-w-[100px] md:max-w-[140px]"
@@ -49,10 +49,12 @@ const Section__HomeHero = () => {
                 return (
                   <li
                     key={id}
-                    className="flex items-start md:items-center gap-4 max-w-[180px] md:max-w-[240px] [&>svg]:min-w-[30px] [&>svg]:min-h-[30px md:[&>svg]:min-w-[60px] md:[&>svg]:min-h-[60px] font-normal "
+                    className="flex items-start md:items-center gap-4 max-w-[140px] sm:max-w-[180px] md:max-w-[240px] [&>svg]:min-w-[30px] [&>svg]:min-h-[30px md:[&>svg]:min-w-[60px] md:[&>svg]:min-h-[60px] font-normal "
                   >
                     {icon}
-                    <p className="text-[16px] leading-tight">{text}</p>
+                    <p className="text-[12px] sm:text-[16px] leading-tight">
+                      {text}
+                    </p>
                   </li>
                 );
               }
