@@ -30,9 +30,11 @@ const Section__Performance = () => {
             <li className="max-w-[300px] flex flex-col items-center justify-center gap-10">
               <div>
                 <Icon__SuperFast />
-                <h3 className="text-md md:text-xl font-semibold">SUPER FAST</h3>
+                <h3 className="text-[20px] md:text-[26px] font-semibold">
+                  SUPER FAST
+                </h3>
               </div>
-              <p>
+              <p className="text-[16px]">
                 Our network is fnely tuned for rapid data transfer, delivering a
                 seamless online experience. Whether you&apos;re streaming your
                 favorite content, downloading large fles, or engaging in
@@ -42,11 +44,11 @@ const Section__Performance = () => {
             <li className="max-w-[300px] flex flex-col items-center justify-center gap-10">
               <div>
                 <Icon__SuperStable />
-                <h3 className="text-md md:text-xl font-semibold">
+                <h3 className="text-[20px] md:text-[26px] font-semibold">
                   SUPER STABLE
                 </h3>
               </div>
-              <p>
+              <p className="text-[16px]">
                 The network uses high-performance servers which guarantee a
                 rock-solid and dependable connecton, ensuring that you can
                 browse, stream, or work online without interruptons or lags, and
