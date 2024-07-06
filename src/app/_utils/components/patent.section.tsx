@@ -26,9 +26,9 @@ const Section__Patent = () => {
             This level of privacy and security simply cannot be found anywhere.
           </p>
         </ANIM__FadeInOutOnScroll>
-        <ANIM__FadeInOutOnScroll className="flex flex-col items-center justify-center">
+        <ANIM__FadeInOutOnScroll className="flex flex-col items-center justify-center max-w-[700px] mx-auto">
           <Image
-            src="/patent.svg"
+            src="/patent.png"
             alt=""
             width={3000}
             height={3000}
