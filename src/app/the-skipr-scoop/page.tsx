@@ -84,6 +84,7 @@ const Page = async ({searchParams}: any) => {
           return <BlogCard item={item} key={item} />;
         })}
       </div>
+
       <Pagination totalPages={totalPages} data={data} />
     </div>
   );

@@ -26,7 +26,7 @@ export default function Pagination(props: any) {
     router.push(`/the-skipr-scoop?page=${currentPage + 1}`, { scroll: false });
   };
 
-  console.log(data);
+
 
 
 
