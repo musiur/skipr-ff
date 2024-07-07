@@ -72,3 +72,11 @@ button {
     opacity: 0;
   }
 }
+.social_share button{
+  min-width: 0px !important;
+}
+
+.paragraph_wraper a{
+  color: #9900FF;
+  text-decoration: underline;
+}

@@ -5,17 +5,21 @@ import { Bebas_Neue } from "next/font/google";
 import Icon__Date from "../_utils/assets/date";
 import Icon__Eye from "../_utils/assets/eye";
 import Image from "next/image";
-import Icon__Twitter from "../_utils/assets/twitter";
-import Icon__FB from "../_utils/assets/fb";
-import Icon__Instagram from "../_utils/assets/instagram";
-import Icon__Youtube from "../_utils/assets/youtube";
-import Icon__Linkdin from "../_utils/assets/linkedin";
-import Icon__Tiktok from "../_utils/assets/tiktok";
-import Icon__WhatsApp from "../_utils/assets/whatsapp";
-import Icon__Redit from "../_utils/assets/redit";
 import Navbar from "@/components/layouts/navbar";
 import Icon__Back from "../_utils/assets/back";
 import Link from "next/link";
+import { client } from "@/lib/ApolloClient";
+import { GET_POST, GET_POST_SEO } from "@/lib/Quries";
+import moment from "moment";
+import HeadingBlock from "@/components/Blocks/HeadingBlock";
+import ParagraphBlock from "@/components/Blocks/ParagraphBlock";
+import ImageBlock from "@/components/Blocks/ImageBlock";
+import ListsBlock from "@/components/Blocks/ListsBlock";
+import QuoteBlock from "@/components/Blocks/QuoteBlock";
+import EmbedBlock from "@/components/Blocks/EmbedBlock";
+import TableBlock from "@/components/Blocks/TableBlock";
+import SocialShare from "../_utils/components/SocialShare";
+
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -23,7 +27,36 @@ const bebas_neue = Bebas_Neue({
   subsets: ["latin", "latin-ext"],
 });
 
-const Page = () => {
+export async function generateMetadata({ params: { slug } }: any) {
+  const res: any = await client.request(
+    GET_POST_SEO,
+    // variables are type-checked too!
+    { id: slug }
+  );
+
+  const seo = res?.post?.seo || {};
+
+  return {
+    title: seo?.title || "",
+    description: seo?.metaDesc || "",
+    keywords: `${seo.focuskw},${seo?.metaKeywords}`,
+    openGraph: {
+      images: seo?.opengraphImage?.sourceUrl
+        ? [{ url: seo?.opengraphImage?.sourceUrl }]
+        : [],
+    },
+  };
+}
+
+const Page = async ({ params: { slug } }: any) => {
+  const resPost: any = await client.request(GET_POST, {
+    id: slug,
+  });
+
+  const post = resPost.post || {};
+
+  const blocks = JSON.parse(post?.blocksJSON);
+
   return (
     <div>
       <Navbar color="black" />
@@ -38,34 +71,27 @@ const Page = () => {
                 "text-left leading-10 uppercase 2xl:text-[60px]"
               )}
             >
-              THE POWER OF AUTONOMY
+              {post?.title}
             </h1>
             <div className="w-full flex flex-col [@media(min-width:600px)]:flex-row items-start [@media(min-width:600px)]:items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <Icon__Date className="w-4 h-4" />
-                  <span className="text-xs">Jun 15, 2024</span>
+                  <span className="text-xs">
+                    {moment(post?.date).format("MMM DD, YYYY")}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon__Eye className="w-4 h-4" />
                   <span className="text-xs">1234</span>
                 </div>
               </div>
-              <div className="flex items-center justify-end gap-2">
-                <Icon__FB className="fill-darkish" />
-                <Icon__Twitter className="fill-darkish" />
-                <Icon__Instagram className="fill-darkish" />
-                <Icon__Youtube className="fill-darkish" />
-                <Icon__Linkdin className="fill-darkish" />
-                <Icon__Tiktok className="fill-darkish" />
-                <Icon__WhatsApp className="fill-darkish" />
-                <Icon__Redit className="fill-darkish" />
-              </div>
+              <SocialShare post={post} />
             </div>
           </ANIM__FadeInOutOnScroll>
         </ANIM__FadeInOutOnScroll>
 
-        <ANIM__FadeInOutOnScroll className="space-y-10 py-10">
+        <div className="space-y-10 py-10">
           <div className="w-full h-64 relative">
             <Image
               src="/blog-hero.png"
@@ -74,45 +100,60 @@ const Page = () => {
               className="object-cover object-center"
             />
           </div>
-          <ANIM__FadeInOutOnScroll className="space-y-10">
-            <p>
-              Eiusmod excepteur duis fugiat nulla pariatur consectetur deserunt
-              laborum aliquip laborum ullamco mollit qui do. Magna laboris
-              pariatur duis et est esse laboris fugiat. Minim sit ea enim
-              exercitation pariatur esse eu magna irure proident. Tempor
-              voluptate elit reprehenderit pariatur culpa sint nulla nisi
-              fugiat. Fugiat duis in dolore do est. Nulla enim nulla dolore
-              aliqua tempor Lorem culpa minim qui sit dolor tempor.
-            </p>
-            <p>
-              Eiusmod excepteur duis fugiat nulla pariatur consectetur deserunt
-              laborum aliquip laborum ullamco mollit qui do. Magna laboris
-              pariatur duis et est esse laboris fugiat. Minim sit ea enim
-              exercitation pariatur esse eu magna irure proident. Tempor
-              voluptate elit reprehenderit pariatur culpa sint nulla nisi
-              fugiat. Fugiat duis in dolore do est. Nulla enim nulla dolore
-              aliqua tempor Lorem culpa minim qui sit dolor tempor.
-            </p>
-            <p>
-              Eiusmod excepteur duis fugiat nulla pariatur consectetur deserunt
-              laborum aliquip laborum ullamco mollit qui do. Magna laboris
-              pariatur duis et est esse laboris fugiat. Minim sit ea enim
-              exercitation pariatur esse eu magna irure proident. Tempor
-              voluptate elit reprehenderit pariatur culpa sint nulla nisi
-              fugiat. Fugiat duis in dolore do est. Nulla enim nulla dolore
-              aliqua tempor Lorem culpa minim qui sit dolor tempor.
-            </p>
-            <p>
-              Eiusmod excepteur duis fugiat nulla pariatur consectetur deserunt
-              laborum aliquip laborum ullamco mollit qui do. Magna laboris
-              pariatur duis et est esse laboris fugiat. Minim sit ea enim
-              exercitation pariatur esse eu magna irure proident. Tempor
-              voluptate elit reprehenderit pariatur culpa sint nulla nisi
-              fugiat. Fugiat duis in dolore do est. Nulla enim nulla dolore
-              aliqua tempor Lorem culpa minim qui sit dolor tempor.
-            </p>
-          </ANIM__FadeInOutOnScroll>
-        </ANIM__FadeInOutOnScroll>
+          <div className="space-y-5 text-black">
+            {blocks?.map((block: any, index: number) =>
+              block.name === "core/heading" ? (
+                <HeadingBlock
+                  key={index}
+                  content={block?.dynamicContent.replace(/(<([^>]+)>)/gi, "")}
+                  textAlign={block?.attributes?.textAlign}
+                  level={block?.attributes?.level}
+                />
+              ) : block.name === "core/paragraph" ? (
+                <ParagraphBlock
+                  key={index}
+                  content={block?.originalContent}
+                  textAlign={block?.attributes?.textAlign}
+                  dropCap={block?.attributes?.dropCap}
+                  className="paragraph_wraper"
+                />
+              ) : block.name === "core/image" ? (
+                <ImageBlock
+                  key={index}
+                  url={block?.attributes?.url}
+                  align={block?.attributes?.align}
+                  width={block?.attributes?.width}
+                  height={block?.attributes?.height}
+                  alt={block?.attributes?.alt}
+                />
+              ) : block.name === "core/list" ? (
+                <ListsBlock
+                  key={index}
+                  align={block?.attributes?.align}
+                  innerBlocks={block?.innerBlocks}
+                />
+              ) : block.name === "core/quote" ? (
+                <QuoteBlock
+                  key={index}
+                  align={block?.attributes?.align}
+                  innerBlocks={block?.innerBlocks}
+                  textColor={block?.attributes?.textColor}
+                  backgroundColor={block?.attributes?.backgroundColor}
+                  citation={block?.originalContent.replace(/(<([^>]+)>)/gi, "")}
+                />
+              ) : block.name === "core/embed" ? (
+                <EmbedBlock
+                  key={index}
+                  url={block?.attributes?.url}
+                  caption={block?.attributes?.caption}
+                  content={block?.originalContent}
+                />
+              ) : block.name === "core/table" ? (
+                <TableBlock key={index} content={block} />
+              ) : null
+            )}
+          </div>
+        </div>
 
         <BackLink />
       </div>
