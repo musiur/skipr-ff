@@ -5,6 +5,7 @@ import { Bebas_Neue } from "next/font/google";
 import Icon__CheckCircle from "./_utils/assets/check.icon";
 import PriceCard from "./_utils/components/price-card";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -80,7 +81,7 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default dynamic(() => Promise.resolve(Page), { ssr: false });
 
 const Data__ListOne = [
   "No one knows your identty, including Skipr.",

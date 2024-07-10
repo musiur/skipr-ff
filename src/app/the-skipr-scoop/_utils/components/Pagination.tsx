@@ -9,24 +9,25 @@ export default function Pagination(props: any) {
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
 
+
   const handlePageChange = (page: number) => {
+    router.push(`/the-skipr-scoop?page=${page}`);
     setCurrentPage(page);
-    router.push(`/the-skipr-scoop?page=${page}`, { scroll: false });
   };
 
   const handlePagePrev = () => {
     if (currentPage < 2) return;
+    router.push(`/the-skipr-scoop?page=${currentPage - 1}`);
     setCurrentPage(currentPage - 1);
-    router.push(`/the-skipr-scoop?page=${currentPage - 1}`, { scroll: false });
   };
 
   const handlePageNext = () => {
     if (currentPage >= totalPages) return;
+    router.push(`/the-skipr-scoop?page=${currentPage + 1}`);
     setCurrentPage(currentPage + 1);
-    router.push(`/the-skipr-scoop?page=${currentPage + 1}`, { scroll: false });
   };
 
-
+ 
 
 
 
@@ -37,7 +38,7 @@ export default function Pagination(props: any) {
         </span>
       
 
-      {Array.from({ length: 3 }).map((num: any, idx) => {
+      {Array.from({ length: totalPages }).map((num: any, idx) => {
         return (
           <div
             onClick={() => handlePageChange(idx + 1)}

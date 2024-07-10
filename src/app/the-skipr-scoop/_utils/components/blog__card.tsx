@@ -1,14 +1,25 @@
+'use client'
 import Image from "next/image";
 import Icon__Date from "../assets/date";
 import Icon__Eye from "../assets/eye";
 import Link from "next/link";
 import moment from "moment";
+import { useEffect, useState } from "react";
 
-const BlogCard = async (props: any) => {
+const BlogCard = (props: any) => {
   const { item } = props;
 
-  const resImage = await fetch(`https://w3mantra.com/skipr_wp/wp-json/wp/v2/media/${item?.featured_media}`);
-  const image = await resImage.json();
+  const [image, setImage] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchImage = async () => {
+      const res = await fetch(`https://w3mantra.com/skipr_wp/wp-json/wp/v2/media/${item.featured_media}`);
+      const data = await res.json();
+      setImage(data);
+    };
+    fetchImage();
+  }, [item.featured_media]);
+
 
 
 

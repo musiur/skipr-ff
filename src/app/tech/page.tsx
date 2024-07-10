@@ -5,6 +5,7 @@ import Section__Autonomous from "./_utils/autonomous.section";
 import Section__Burner from "./_utils/burner.section";
 import Section__Last from "./_utils/last.section";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "The Skipr Scoop",
@@ -35,4 +36,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default dynamic(() => Promise.resolve(Page), { ssr: false });

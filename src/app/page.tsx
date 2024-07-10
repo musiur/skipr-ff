@@ -12,6 +12,7 @@ import Section__FeaturesMess from "./_utils/components/features__mess.section";
 import Section__Table from "./_utils/components/table.section";
 import Section__Last from "./_utils/components/last.section";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "The Skipr Scoop",
@@ -49,4 +50,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default dynamic(() => Promise.resolve(Home), { ssr: false });

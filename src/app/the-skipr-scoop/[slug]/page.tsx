@@ -19,6 +19,7 @@ import QuoteBlock from "@/components/Blocks/QuoteBlock";
 import EmbedBlock from "@/components/Blocks/EmbedBlock";
 import TableBlock from "@/components/Blocks/TableBlock";
 import SocialShare from "../_utils/components/SocialShare";
+import dynamic from "next/dynamic";
 
 
 const bebas_neue = Bebas_Neue({
@@ -161,7 +162,7 @@ const Page = async ({ params: { slug } }: any) => {
   );
 };
 
-export default Page;
+export default dynamic(() => Promise.resolve(Page), { ssr: false });
 
 const BackLink = () => {
   return (
