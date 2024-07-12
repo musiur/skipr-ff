@@ -16,10 +16,11 @@ const Section__Last = () => {
       <ANIM__FadeInOutOnScroll className="section bg-white">
         <div className="container flex flex-col justify-center items-center gap-8">
           <ANIM__FadeInOutOnScroll>
+          {/* text-5xl 2xl:text-6xl */}
             <h1
               className={cn(
                 bebas_neue.className,
-                "text-center uppercase text-5xl 2xl:text-6xl"
+                "text-center uppercase text-[#001C2F] text-5xl 2xl:text-[72px] leading-[52px]"
               )}
             >
               you cannot
@@ -31,13 +32,13 @@ const Section__Last = () => {
               skipr.
             </h1>
           </ANIM__FadeInOutOnScroll>
-          <p className="max-w-[420px] mx-auto text-lg text-center">
+          <p className="max-w-[420px] mx-auto text-lg !leading-[36px] text-[#001C2F] text-center">
             Welcome to the most powerful online
             <br />
             privacy setting on the planet.
           </p>
           <ANIM__FadeInOutOnScroll className="pt-4">
-            <button className="bg-white text-darkish border-darkish min-w-[240px]">
+            <button className="bg-white text-[27px] text-[#001C2F] border-darkish min-w-[240px] h-[51px]">
               Get Skipr Now
             </button>
           </ANIM__FadeInOutOnScroll>

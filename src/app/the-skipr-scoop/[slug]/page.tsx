@@ -61,7 +61,7 @@ const Page = async ({ params: { slug } }: any) => {
   return (
     <div>
       <Navbar color="black" />
-      <div className="container py-48">
+      <div className="container py-40">
         <BackLink />
 
         <ANIM__FadeInOutOnScroll className="w-full grid grid-cols-1 gap-4 py-10">
@@ -69,7 +69,7 @@ const Page = async ({ params: { slug } }: any) => {
             <h1
               className={cn(
                 bebas_neue.className,
-                "text-left leading-10 uppercase 2xl:text-[60px]"
+                "text-left leading-10 uppercase 2xl:text-[60px] text-[#002238]"
               )}
             >
               {post?.title}
@@ -92,7 +92,7 @@ const Page = async ({ params: { slug } }: any) => {
           </ANIM__FadeInOutOnScroll>
         </ANIM__FadeInOutOnScroll>
 
-        <div className="space-y-10 py-10">
+        <div className="space-y-10 pb-10">
           <div className="w-full h-64 relative">
             <Image
               src="/blog-hero.png"

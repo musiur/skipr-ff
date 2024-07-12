@@ -24,8 +24,8 @@ const BlogCard = (props: any) => {
 
 
   return (
-    <div className="grid grid-cols-1 min-[860px]:grid-cols-2 min-[1150px]:grid-cols-5 gap-10">
-      <div className="col-span-1 min-[1150px]:col-span-3 relative min-h-[200px]">
+    <div className="grid grid-cols-1 min-[860px]:grid-cols-2 min-[1150px]:grid-cols-7 gap-10">
+      <div className="col-span-1 min-[1150px]:col-span-4 relative min-h-[250px]">
         {
           image?.source_url &&
           <Image
@@ -37,27 +37,27 @@ const BlogCard = (props: any) => {
         }
 
       </div>
-      <div className="col-span-1 min-[1150px]:col-span-2 space-y-4">
+      <div className="col-span-1 min-[1150px]:col-span-3 space-y-4">
         <Link href={`/the-skipr-scoop/${item?.slug}`}>
-          <h3 className="font-semibold">{item?.title?.rendered}</h3>
+          <h3 className="font-semibold uppercase text-[#001C2F]">{item?.title?.rendered}</h3>
         </Link>
-        <p className="text-sm">
+        <p className="text-sm text-[#001C2F]">
           {item?.excerpt?.rendered.replace(/<[^>]*>?/gm, "").slice(0, 100)}
         </p>
-        <div className="flex flex-col min-[400px]:flex-row items-center justify-end min-[400px]:justify-between gap-4">
+        <div className="flex flex-col min-[400px]:flex-row items-center justify-end min-[400px]:justify-between gap-4 ">
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-2">
               <Icon__Date className="w-4 h-4" />
-              <span className="text-xs">{moment(item?.date).format('MMM DD, YYYY')}</span>
+              <span className="text-xs text-[#001C2F]">{moment(item?.date).format('MMM DD, YYYY')}</span>
               {/* Jun 15, 2024 */}
             </div>
             <div className="flex items-center gap-2">
               <Icon__Eye className="w-4 h-4" />
-              <span className="text-xs">1234</span>
+              <span className="text-xs text-[#001C2F]">1234</span>
             </div>
           </div>
           <Link href={`/the-skipr-scoop/${item?.slug}`}>
-            <button className="max-w-[200px] min-w-[180px] px-4 py-[3px] rounded-md text-center border-darkish text-sm">
+            <button className="max-w-[200px] min-w-[180px] px-4 py-[3px] text-[#001C2F] rounded-md text-center border-[#001C2F] text-sm">
               Read Full Version
             </button>
           </Link>

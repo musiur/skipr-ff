@@ -53,14 +53,14 @@ const Page = async ({searchParams}: any) => {
           <h1
             className={cn(
               bebas_neue.className,
-              "text-left leading-10 uppercase 2xl:text-[60px]"
+              "text-left leading-[50px] uppercase text-[58px] 2xl:text-[64px] text-[#001C2F]"
             )}
           >
             The Skipr
             <br />
             Scoop
           </h1>
-          <p>
+          <p className="text-[#001C2F] font-[500]">
             The latest, the greatest and the stuf 
             <br /> you should really know.
           </p>

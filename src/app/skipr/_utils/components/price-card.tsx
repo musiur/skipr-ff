@@ -10,7 +10,7 @@ const bebas_neue = Bebas_Neue({
 const PriceCard = ({ data }: { data: any }) => {
   const { image, tagline, price, bottomPrice, bottomText } = data;
   return (
-    <div className="min-w-[300px] w-[300px] max-w-[300px] shadow-[4px_4px_10px_black] p-6 [&>*]:text-white rounded-md">
+    <div className="min-w-[300px] w-[350px] max-w-[350px] shadow-[4px_4px_10px_black] px-6 py-7 [&>*]:text-white rounded-md">
       <div className="relative">
         <Image
           src={image}
@@ -18,8 +18,8 @@ const PriceCard = ({ data }: { data: any }) => {
           fill={true}
           className="object-cover object-center z-[-1]"
         />
-        <div className="space-y-4 text-center py-6 px-2">
-          <p className="text-white text-xs">{tagline}</p>
+        <div className="space-y-4 text-center py-12 px-2">
+          <p className="text-white text-xs ">{tagline}</p>
           <div
             className={cn(
               bebas_neue.className,

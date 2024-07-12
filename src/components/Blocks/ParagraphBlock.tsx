@@ -18,5 +18,5 @@ function getClassName(align: string) {
     style,
     textColor,
   }: any) {
-    return <div className={`${getClassName(align)} ${className}`}>{parseHtml(content)}</div>;
+    return <div className={`${getClassName(align)} ${className} text-[#002238]`}>{parseHtml(content)}</div>;
   }

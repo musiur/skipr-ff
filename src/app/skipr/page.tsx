@@ -1,13 +1,19 @@
 import ANIM__FadeInOutOnScroll from "@/components/anims/fadein.anim";
 import Navbar from "@/components/layouts/navbar";
 import { cn } from "@udecode/cn";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Lato } from "next/font/google";
 import Icon__CheckCircle from "./_utils/assets/check.icon";
 import PriceCard from "./_utils/components/price-card";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 const bebas_neue = Bebas_Neue({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin", "latin-ext"],
+});
+
+const lato = Lato({
   weight: "400",
   style: "normal",
   subsets: ["latin", "latin-ext"],
@@ -33,11 +39,11 @@ const Page = () => {
     <>
       <Navbar color="black" />
       <div className="container py-48 flex flex-col [@media(min-width:1100px)]:flex-row items-center justify-between gap-10">
-        <ANIM__FadeInOutOnScroll className="space-y-8">
+        <ANIM__FadeInOutOnScroll className="space-y-8 ">
           <h1
             className={cn(
               bebas_neue.className,
-              "text-left leading-10 uppercase"
+              "text-left leading-[32px] uppercase text-[#001C2F]  xl:text-[37px]"
             )}
           >
             EXPERIENCE THE ULTIMATE
@@ -45,11 +51,11 @@ const Page = () => {
             LEVEL OF PRIVACY & SECURITY
           </h1>
           <div className="space-y-2">
-            <p className="text-sm">ZERO KNOWLEDGE GUARANTEE</p>
-            <ul>
+            <p className={cn(lato.className, ` text-sm text-[#001C2F]`) }>ZERO KNOWLEDGE GUARANTEE</p>
+            <ul className={cn(lato.className) }>
               {Data__ListOne.map((item, index) => {
                 return (
-                  <li key={index} className="flex items-center gap-4 text-xs">
+                  <li key={index} className="flex items-center gap-4 text-xs pb-[5px] text-[#001C2F]">
                     <Icon__CheckCircle className="mr-2" />
                     {item}
                   </li>
@@ -58,11 +64,11 @@ const Page = () => {
             </ul>
           </div>
           <div className="space-y-2">
-            <p className="text-sm">TAILORED TO YOUR NEEDS</p>
-            <ul>
+            <p className={cn(lato.className, ` text-sm`) }>TAILORED TO YOUR NEEDS</p>
+            <ul className={cn(lato.className) }>
               {Data__ListTwo.map((item, index) => {
                 return (
-                  <li key={index} className="flex items-center gap-4 text-xs">
+                  <li key={index} className="flex items-center gap-4 text-xs pb-[5px] text-[#001C2F]">
                     <Icon__CheckCircle className="mr-2" />
                     {item}
                   </li>
